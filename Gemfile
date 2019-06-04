@@ -3,7 +3,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.3'
 
+gem 'simple_form'
 
+gem 'will_paginate', '~> 3.1', '>= 3.1.7'
+gem 'will_paginate-bootstrap' 
+#this is needed to add bootstrap style to pagination
 
 gem 'jquery-rails'
 gem 'popper_js', '~> 1.11.1'
