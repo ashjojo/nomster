@@ -4,7 +4,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.5.3'
 
 gem 'simple_form'
-
+gem "font-awesome-rails"
+gem 'devise'
 gem 'will_paginate', '~> 3.1', '>= 3.1.7'
 gem 'will_paginate-bootstrap' 
 #this is needed to add bootstrap style to pagination
@@ -73,4 +74,4 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem "font-awesome-rails"
+
