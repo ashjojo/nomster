@@ -9,6 +9,8 @@ gem 'devise'
 gem 'will_paginate', '~> 3.1'
 gem 'will_paginate-bootstrap4'
 #this is needed to add bootstrap style to pagination
+gem "geocoder"
+gem "figaro"
 
 gem 'jquery-rails'
 gem 'popper_js', '~> 1.11.1'
