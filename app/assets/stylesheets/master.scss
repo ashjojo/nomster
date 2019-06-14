@@ -49,10 +49,6 @@ body {
         height: 300px;
       }
 
-.clear {
-  clear: both;
-}
-
 blockquote {
   background: #f9f9f9;
   border-left: 10px solid #ccc;
@@ -73,5 +69,12 @@ blockquote:before {
 blockquote p {
   display: inline;
 }
+
+
+.clear {
+  clear: both;
+}
+
+
 
  
