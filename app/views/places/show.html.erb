@@ -67,6 +67,13 @@
   </div>
 </div>
 
+  <div class="clear"></div>
+  <%= simple_form_for @photo, url: '#' do |f| %>
+      <%= f.input :image %>
+      <%= f.input :caption %>
+      <%= f.submit "Add an image", class: 'btn btn-primary' %>
+    <% end %>
+
 <div class="col-10 offset-1">
   <h1 class="float-left">Comments</h1>
   <!-- Button trigger modal -->
@@ -76,6 +83,9 @@
 </div>
 
 <div class="clear"></div>
+
+
+
 
 <div class="row">
   <% @place.comments.each do |comment| %>
