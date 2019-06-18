@@ -7,15 +7,12 @@
  <% if @place.latitude.present? && @place.longitude.present? %>
 
   <script>
-
     function initMap() {
       var myLatLng = {lat: <%= @place.latitude %>, lng: <%= @place.longitude %>};
-
       var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 12,
         center: myLatLng
       });
-
       var marker = new google.maps.Marker({
         position: myLatLng,
         map: map,
@@ -74,6 +71,7 @@
       <%= f.submit "Add an image", class: 'btn btn-primary' %>
     <% end %>
 
+
 <div class="col-10 offset-1">
   <h1 class="float-left">Comments</h1>
   <!-- Button trigger modal -->
@@ -82,7 +80,7 @@
  </button>
 </div>
 
-<div class="clear"></div>
+
 
 
 
@@ -100,3 +98,5 @@
  </div>
 <% end %>
 </div>
+
+
