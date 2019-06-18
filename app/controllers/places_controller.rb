@@ -2,11 +2,13 @@ class PlacesController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
   def index
     @places= Place.all.paginate(page: params[:page])
+    @photo = Photo.new
 
   end
 
   def new
     @place = Place.new
+    @photos = Photo.new
   end
 
   def create
@@ -21,6 +23,11 @@ end
   def show
     @place = Place.find(params[:id])
     @comment = Comment.new
+    @photo = Photo.new
+  end
+
+  def view
+    @place = Place.find(params[:id])
     @photo = Photo.new
   end
 
