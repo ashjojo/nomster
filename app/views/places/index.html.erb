@@ -26,7 +26,7 @@
  	 <% if place.photos.present? %>
       <div class="row">
         <div class="contain">
-          <%= image_tag place.photos.last.picture.to_s, class: "frame" %>
+          <%= image_tag place.photos.last.picture.to_s %>
           <div class="cap">
             <%= @photo.caption %>
           </div>
