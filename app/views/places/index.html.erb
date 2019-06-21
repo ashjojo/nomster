@@ -23,10 +23,11 @@
 
  	<div class="clear"></div>
 
- 	 <% if place.photos.present? %>
+ 	
+ 	 <% if !place.photos.last.nil? %>
       <div class="row">
         <div class="contain">
-          <%= image_tag place.photos.last.picture.to_s %>
+          <%= image_tag place.photos.last.picture.to_s, class: "image-small" %>
           <div class="cap">
             <%= @photo.caption %>
           </div>
@@ -45,3 +46,4 @@
 	<div class="col-10 offset-1">
 		<%= will_paginate @places, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %>
 	</div>
+</div>
